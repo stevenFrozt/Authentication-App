@@ -2,7 +2,6 @@ const mongoose = require("mongoose")
 
 const Schema = mongoose.Schema
 
-// Define the schema for the student
 const userSchema = new Schema(
   {
     // _id: Schema.Types.ObjectId,
@@ -17,7 +16,6 @@ const userSchema = new Schema(
   { collection: "user" }
 )
 
-// Create the model using the main schema
 const userModel = mongoose.model("userSchema", userSchema)
 
 module.exports = userModel
